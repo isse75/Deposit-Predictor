@@ -245,15 +245,16 @@ Conducted in detail in `Notebook.ipynb`:
 
 ### Techniques Used
 
-- Train/Val/Test split with stratification
-- Cross-validation with 5 folds
-- Hyperparameter tuning with GridSearchCV
+- Train/Val/Test split with stratification to protect class balance.
+- One-Hot Encoding Using DictVectorizer, preparing Categorical Variables to be suitable for use on Scikit-Learn Models.
+- 5-Fold Cross Validation and Hyperparameter tuning with GridSearchCV on Variables to identify optimal performance for each model.
 - Threshold selection using F1 optimization
 - Class imbalance handling with `scale_pos_weight`
+- Model evaluation using ROC AUC, F1, Precision, Recall, and Accuracy on the held-out test set. All model decisions were made without referencing the test data.
 
 ### Model Performance Comparison
 
-[Model Comparison](https://via.placeholder.com/700x500/27AE60/FFFFFF?text=Model+Performance+Comparison%0A%0ALogistic+Regression+%7C+Random+Forest+%7C+XGBoost%0A%0AAccuracy%2C+ROC+AUC%2C+F1%2C+Precision%2C+Recall%0A%0AXGBoost+wins+on+key+metrics)
+<img width="1391" height="790" alt="image" src="https://github.com/user-attachments/assets/c3138ead-19ed-4cec-b4bc-58b70ead3a75" />
 
 ### Detailed Results
 
