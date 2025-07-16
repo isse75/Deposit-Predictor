@@ -113,7 +113,7 @@ Marketing calls are expensive and time-consuming. However, only a small proporti
 ├── images/                   # Visualisation assets
 │   ├── target_distribution.png  # Deposit Decision Distribution Chart
 │   ├── correlation_heatmap.png      # Variable Correlation Heatmap
-│   ├── model_comparison.png         # Replace placeholder with actual comparison
+│   ├── model_comparison.png         # Model Performance Comparison Chart
 │   ├── xgboost_roc_curve.png       # Replace placeholder with actual ROC curve
 │   ├── duration_log_plot.png       # Log Duration Distribution Plot
 │   └── pdays_distritbution.png     # pdays Distribution Plot
