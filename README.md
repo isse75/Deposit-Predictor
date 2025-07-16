@@ -111,13 +111,13 @@ Marketing calls are expensive and time-consuming. However, only a small proporti
 .
 ├── data/                     # Dataset storage
 │   └── bank-additional-full.csv     # Bank Marketing Dataset
-├── images/                   # Visualization assets
-│   ├── target_distribution.png      # Deposit Decision Distribution Chart
+├── images/                   # Visualisation assets
+│   ├── target_distribution.png  # Deposit Decision Distribution Chart
 │   ├── correlation_heatmap.png      # Variable Correlation Heatmap
 │   ├── model_comparison.png         # Replace placeholder with actual comparison
 │   ├── xgboost_roc_curve.png       # Replace placeholder with actual ROC curve
-│   ├── duration_log_plot.png       # Replace placeholder with actual plot
-│   └── pdays_log_plot.png          # Replace placeholder with actual plot
+│   ├── duration_log_plot.png       # Log Duration Distribution Plot
+│   └── pdays_distritbution.png     # pdays Distribution Plot
 ├── Notebook.ipynb          # Full EDA and model comparison
 ├── train.py                 # Training script
 ├── predict.py               # Inference service
@@ -205,17 +205,17 @@ Conducted in detail in `Notebook.ipynb`:
 
 ### Duration Analysis - Data Leakage Detected
 
-[Duration Distribution](https://via.placeholder.com/600x400/F39C12/FFFFFF?text=Duration+Log+Distribution%0A%0ALog%28duration%2B1%29+by+Target%0A%0AClear+separation+by+outcome%0A%0AData+leakage+identified)
+<img width="580" height="453" alt="image" src="https://github.com/user-attachments/assets/2d3fc0b8-db81-48cd-af81-83ed93495e0e" />
 
 *Log(+1) transformed duration shows clear separation by target - removed due to data leakage*
 
-**Why removed**: `duration` is only known AFTER the call ends, making it unavailable for real-time prediction. While highly predictive (customers who talk longer often subscribe), it creates data leakage.
+**Why removed**: `duration` is only known AFTER the call ends, making it unavailable for real-time prediction. While being a highly predictive variable (customers who talk longer often subscribe), it creates data leakage.
 
 ### Pdays Analysis - Uninformative Feature
 
-[Pdays Distribution](https://via.placeholder.com/600x400/9B59B6/FFFFFF?text=Pdays+Log+Distribution%0A%0ALog%28pdays%2B1%29+Analysis%0A%0A96.4%25+missing+values+%28999%29%0A%0AToo+sparse+to+be+useful)
+<img width="589" height="432" alt="image" src="https://github.com/user-attachments/assets/e73caa6e-4aec-4637-aed9-255ba7a25d0b" />
 
-*Log(+1) transformed pdays dominated by 999 values (no previous contact)*
+*Number of days that passed by after the client was last contacted from a previous campaign is dominated by 999 days, either for clients never previously contacted or clients contacted more than 999 days ago*
 
 **Why removed**: `pdays` contained 96.4% missing values (coded as 999), providing minimal predictive value. The feature was too sparse to be useful.
 
