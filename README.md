@@ -84,7 +84,8 @@ Marketing calls are expensive and time-consuming. However, only a small proporti
 
 ### 🔹 Target Distribution
 
-[Target Distribution](https://via.placeholder.com/600x400/2E86AB/FFFFFF?text=Target+Distribution+Chart%0A%0A88.7%25+No+%7C+11.3%25+Yes%0A%0AClass+Imbalance+Visualization)
+<img width="589" height="453" alt="image" src="https://github.com/user-attachments/assets/887cda9d-4f16-4810-bda7-7f7a36d83ea7" />
+
 
 *Severe class imbalance: Only 11.3% of customers subscribed to term deposits - this drives our model selection strategy*
 
@@ -111,8 +112,8 @@ Marketing calls are expensive and time-consuming. However, only a small proporti
 ├── data/                     # Dataset storage
 │   └── bank-additional-full.csv     # Bank Marketing Dataset
 ├── images/                   # Visualization assets
-│   ├── target_distribution.png      # Replace placeholder with actual chart
-│   ├── correlation_heatmap.png      # Replace placeholder with actual heatmap
+│   ├── target_distribution.png      # Deposit Decision Distribution Chart
+│   ├── correlation_heatmap.png      # Variable Correlation Heatmap
 │   ├── model_comparison.png         # Replace placeholder with actual comparison
 │   ├── xgboost_roc_curve.png       # Replace placeholder with actual ROC curve
 │   ├── duration_log_plot.png       # Replace placeholder with actual plot
@@ -194,7 +195,7 @@ Conducted in detail in `Notebook.ipynb`:
 
 ### Feature Correlation Analysis
 
-[Correlation Heatmap](https://via.placeholder.com/600x500/E74C3C/FFFFFF?text=Correlation+Heatmap%0A%0AFeature+vs+Feature+Correlations%0A%0ALow+individual+correlations%0Awith+target+variable)
+<img width="582" height="433" alt="image" src="https://github.com/user-attachments/assets/de3f3738-dd72-41d9-8997-0b4fc87b9b3d" />
 
 *Low individual correlations justify ensemble methods that excel at finding feature interactions*
 
