@@ -51,7 +51,6 @@ streamlit run streamlit_app.py
 - [🚀 Deployment](notion://www.notion.so/22ec658b02618042b215cae1319dbdae?showMoveTo=true&saveParent=true#deployment)
 - [💡 Usage Examples](notion://www.notion.so/22ec658b02618042b215cae1319dbdae?showMoveTo=true&saveParent=true#usage-examples)
 - [🔌 API Reference](notion://www.notion.so/22ec658b02618042b215cae1319dbdae?showMoveTo=true&saveParent=true#api-reference)
-- [🤝 Contributing](notion://www.notion.so/22ec658b02618042b215cae1319dbdae?showMoveTo=true&saveParent=true#contributing)
 - [👤 Author](notion://www.notion.so/22ec658b02618042b215cae1319dbdae?showMoveTo=true&saveParent=true#author)
 - [📄 License](notion://www.notion.so/22ec658b02618042b215cae1319dbdae?showMoveTo=true&saveParent=true#license)
 
