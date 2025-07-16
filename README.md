@@ -114,7 +114,7 @@ Marketing calls are expensive and time-consuming. However, only a small proporti
 │   ├── target_distribution.png  # Deposit Decision Distribution Chart
 │   ├── correlation_heatmap.png      # Variable Correlation Heatmap
 │   ├── model_comparison.png         # Model Performance Comparison Chart
-│   ├── xgboost_roc_curve.png       # Replace placeholder with actual ROC curve
+│   ├── xgboost_roc_curve.png       # ROC Curve Plot
 │   ├── duration_log_plot.png       # Log Duration Distribution Plot
 │   └── pdays_distritbution.png     # pdays Distribution Plot
 ├── Notebook.ipynb          # Full EDA and model comparison
@@ -283,7 +283,7 @@ As the XGBoost and Random Forest models had similar performance, I decided that 
 
 ### XGBoost ROC Performance
 
-[XGBoost ROC Curve](https://via.placeholder.com/600x500/3498DB/FFFFFF?text=XGBoost+ROC+Curve%0A%0AAUC%3A+0.778%0A%0ATrue+Positive+Rate%0Avs+False+Positive+Rate%0A%0AStrong+discriminative+ability)
+<img width="567" height="453" alt="image" src="https://github.com/user-attachments/assets/b6b565a7-7d74-41b1-b55d-77035b330456" />
 
 *ROC AUC: 0.778 - Strong discriminative ability for identifying potential subscribers*
 
@@ -299,8 +299,13 @@ As the XGBoost and Random Forest models had similar performance, I decided that 
 
 ### Top Predictive Features
 
-| Rank | Feature | Importance | Business Insight |
-
+| Rank | Feature | Importance | 
+| --- | --- | --- | 
+| 1 | poutcome=success | **0.363346** | 
+| 2 | contact=cellular | **0.125201** |
+| 3 |  month=mar | **0.061122** |
+| 4 |  month=jun | **0.053939** | 
+| 5 | mont=oct | **0.046307** |
 
 
 ### Key Business Insights
@@ -365,8 +370,8 @@ As the XGBoost and Random Forest models had similar performance, I decided that 
     
     ```bash
     # Clone and build
-    git clone <https://github.com/yourusername/bank-campaign-classifier.git>
-    cd bank-campaign-classifier
+    git clone <https://github.com/isse75/Deposit-Predictor.git>
+    cd Deposit-Predictor
     sudo docker build -t bank-classifier .
     
     # Run with auto-restart
@@ -520,9 +525,9 @@ print(f"Subscription probability: {result['probability']:.2%}")
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: [your.email@example.com](mailto:your.email@example.com)
+- GitHub: [@isse75](https://github.com/isse75)
+- LinkedIn: [Your LinkedIn](https://linkedin.com/in/issedugou)
+- Email: [isse.dugou@outlook.com](mailto:isse.dugou@outlook.com)
 
 ---
 
