@@ -9,7 +9,7 @@
 
 This project predicts whether a bank customer will subscribe to a term deposit, based on direct marketing campaign data. Built with a complete ML workflow from EDA to deployment, it includes interactive visualization, multiple model comparisons, API services, and a Streamlit UI—deployed with Docker on AWS EC2.
 
-*An end-to-end ML pipeline for customer targeting using the UCI Bank Marketing Dataset*
+**An end-to-end ML pipeline for customer targeting using the UCI Bank Marketing Dataset**
 
 ---
 
