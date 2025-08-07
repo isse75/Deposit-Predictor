@@ -16,7 +16,7 @@ This project predicts whether a bank customer will subscribe to a term deposit, 
 ## 🚀 Quick Start
 
 ### Try the Live Demo
-📍 **Live App**: [<https://deposit-predictor.streamlit.app/>](<https://deposit-predictor.streamlit.app/>)
+📍 **Live App**: [<https://deposit-predictor-jvftka4fyhrrpvuj7orzgb.streamlit.app/>](<https://deposit-predictor-jvftka4fyhrrpvuj7orzgb.streamlit.app/>)
 
 ### Run Locally
 ```bash
